@@ -11,11 +11,13 @@
   "author": "oktayz",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.3",
     "morgan": "^1.9.1",
-    "slugify": "^1.4.0"
+    "slugify": "^1.4.0",
+    "validator": "^12.2.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -26,6 +28,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-security": "^1.4.0",
     "ndb": "^1.1.5",
     "prettier": "^1.19.1"
   },
