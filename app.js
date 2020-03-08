@@ -10,7 +10,11 @@ const app = express();
 
 // 1) Middlewares
 if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
+  app.use(morgan('combined'));
+  // app.use(morgan(':id :method :url :response-time'));
+  // app.use(
+  //   morgan(':method :url :status :res[content-length] - :response-time ms')
+  // );
 }
 
 app.use(express.json({ limit: '10kb' }));
